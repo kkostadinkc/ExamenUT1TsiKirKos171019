@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ejercicio 2 KirTsiKos</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+            video{
+                display:block;
+                margin:auto;
+            }
+
+            table,tr,td,th{
+                border: 1px solid black; 
+                text-align:center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>KirTsiKos - Comparativa de coches</h1>
+        <br>
+        <p style=" text-align:center;">Vamos a comprar estos coche</p>
+        <br><br>
+        <ol>
+            <li>Skoda – TsiKirKos - Superb</li>
+            <li>Skoda – TsiKirKos - Kodiaq</li>
+            <li>Renault – TsiKirKos - Zoe</li>
+            <li>Renault – TsiKirKos - Espace</li>
+        </ol>
+        <br><br>
+
+        <video id=”video1” width=”300” height=”200” autoplay=”autoplay” controls loop=”loop”>
+                <source src="video/SkodaSuperb.mp4" type=”video/mp4” >
+                <source src="video/SkodaSuperb.avi" type="video/mp4">
+        </video>
+        <br><br>
+        <table >
+            <thead>
+                <tr>
+                    <th>Modelos de coches</th>
+                    <th>Skoda</th>
+                    <th>Renault</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="2"></td>
+                    <td>
+                        <p>Superb TDI 150 CV</p>
+                        <img src="img/SkodaSuperb.jpg" alt="Superb TDI 150 CV">
+                    </td>
+                    <td>
+                        <p>Zoe Entry 88CV</p>
+                        <img src="img/RenaultZOE.jpg" alt="Zoe Entry 88CV">
+                    </td>
+                </tr>
+                <tr>
+                        <td>
+                            <p>Kodiaq 2.0 TDI 150 CV</p>
+                            <img src="img/SkodaKodiaq.jpg" alt="Kodiaq 2.0 TDI 150 CV">
+                        </td>
+                        <td>
+                            <p>Especce 1.6 DCI 30 Life 6V</p>
+                            <img src="img/RenaultEspace.jpg" alt="Especce 1.6 DCI 30 Life 6V">
+                        </td>
+                    </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        <p>Estos es el pie de la tabla: Datos tomados de autofacil.</p>
+                        <p>Nombre de fichero de examen: Tis Kir Kos ex171019 ej2.html</p>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <form action="" name="formulario1" id="formularioId">
+            <fieldset>
+                <h2>Encuesta</h2>
+
+                <p>Rellenar los datos con tu modelo de coche favorioto:</p>
+
+                <label for="marcaId">Marca:</label>
+                <input type="text" id="marcaId" placeholder="Introduce marca">
+                <br><br>
+                <label for="modeloId">Modelo:</label>
+                <input type="text" id="modeloId" placeholder="Introduce modelo">
+                <br><br>
+                <label for="caballosId">CV</label>
+                <input type="number" id="caballosId" placeholder="Introduce potencia">
+                <br><br>
+                <label for="colorId">Color favorito del coche:</label>
+                <input type="color" id="coloId" >
+                <br><br>
+                <label for="campoId">Identificador de usuario:</label>
+                <input type="text" id="campoId" placeholder="Identificador" pattern="{[A-Z]{2}[0-9]{4}[a-z]{1}[0-9]{1}}" maxlength="8">
+                <br><br>
+                <input type="submit" name="Enviar" value="Enviar mis opiniones">
+                <br>
+                <p>Gracias. Fichero de examen Tsi_Kir_Kos_171019_ejr2.html</p>
+
+            </fieldset>
+        </form>
+
+    </body>
+</html>
